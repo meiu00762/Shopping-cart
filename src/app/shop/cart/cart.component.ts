@@ -6,7 +6,9 @@ import { ProductService } from '../../product.service';
 import { Item } from '../../shop/entity/item.entity';
 
 @Component({
-	templateUrl: 'cart.component.html'
+  selector: 'cart-item',
+	templateUrl: 'cart.component.html',
+  styleUrls: ['./cart.component.scss']
 })
 
 export class CartComponent implements OnInit {
