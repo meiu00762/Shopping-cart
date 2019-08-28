@@ -1,15 +1,8 @@
 <div class="side-bar" [ngClass]="{'closed': isClosed}">
   SIDEBAR<br><br>
-<!-- <div class="dropdown">  
-    <button class="dropbtn">Product List</button>  
-    <div class="dropdown-content">  
-        <a routerLink="/products">Electronics</a>  
-    </div>  
-</div> -->
-<select>
-<option><a [routerLink]="['/products']">Electronics</a></option>
-<option><a [routerLink]="['/cart']">Cart</a></option>
-</select>
+<select (change)="onNavigate($event.target.value)"> <option>--Select Category--</option> <option value="products">Electronics</option> <option value="clothes">Clothings</option>  </select>
+<br><br>
+<a [routerLink]="['/cart']">Cart</a>
 <br><br>
   <div (click)="toggleSideBar()" class="side-bar-toggle-btn">
     <i class="fa fa-arrow-right"></i>

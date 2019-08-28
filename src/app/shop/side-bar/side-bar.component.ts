@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Routes, RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
   isClosed = true;
-  constructor() { }
+  constructor( private router:Router ) { }
 
+onNavigate(location: string){ this.router.navigate(['/'+location]); }
   ngOnInit() {
   }
   toggleSideBar() {
