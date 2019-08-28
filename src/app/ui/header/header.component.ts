@@ -11,5 +11,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ public myfunction(message : string){
+      alert('Author Name is: '+message);
+ }
 }
