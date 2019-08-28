@@ -10,11 +10,12 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import {ShopRoutingModule} from './shop-routing.module';
 import { ShopZoneComponent } from './shop-zone/shop-zone.component';
 import { CategoryFilterComponent } from './category-filter/category-filter.component';
+import {ClothesComponent } from './product-item-clothes/product-item.component';
 
 @NgModule({
   declarations: [
     ProductListComponent, ProductComponent, CartComponent,
-    SearchComponent, SideBarComponent, OrderComponent, ProductManagerComponent, ShopZoneComponent, CategoryFilterComponent
+    SearchComponent, SideBarComponent, OrderComponent, ProductManagerComponent, ShopZoneComponent, CategoryFilterComponent,ClothesComponent
   ],
   imports: [
     CommonModule, ShopRoutingModule

@@ -10,6 +10,7 @@ import { HomeModule } from './home/home.module';
 import { ShopModule } from './shop/shop.module';
 import { ProductService } from './product.service';
 import { ClothesService } from './clothes.service';
+import {ClothesComponent } from './shop/product-item-clothes/product-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ClothesService } from './clothes.service';
     HomeModule,
     ShopModule
   ],
-  providers: [ ProductService],
+  providers: [ ProductService,ClothesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
