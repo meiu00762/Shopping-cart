@@ -20,7 +20,7 @@ export class ClothesService {
     }
 
     find(id: string): Product {
-      console.log("clothes "+id+this.products[this.getSelectedIndex(id)]);
+      console.log(this.products[this.getSelectedIndex(id)]);
         return this.products[this.getSelectedIndex(id)];
     }
 

@@ -39,8 +39,11 @@ export class CartComponent implements OnInit {
 				} else {
 					let cart: any = JSON.parse(localStorage.getItem('cart'));
 					let index: number = -1;
+         
 					for (var i = 0; i < cart.length; i++) {
+            console.log(i) 
 						let item: Item = JSON.parse(cart[i]);
+            
 						if (item.product.id == id) {
 							index = i;
 							break;
