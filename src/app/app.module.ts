@@ -9,6 +9,7 @@ import { UiModule } from './ui/ui.module';
 import { HomeModule } from './home/home.module';
 import { ShopModule } from './shop/shop.module';
 import { ProductService } from './product.service';
+import { ClothesService } from './clothes.service';
 
 @NgModule({
   declarations: [

@@ -3,15 +3,15 @@ import { Injectable } from '@angular/core';
 import { Product } from '../app/shop/entity/product.entity';
 
 @Injectable()
-export class ProductService {
+export class ClothesService {
 
     private products: Product[];
 
     constructor() {
         this.products = [
-            { id: 'p01', name: 'Gamepad', price: 950, photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbIkEkiQqEtCgU2rHJ4ArHtFQ92eLcnL7g0jYsyNXSci-_oZQu' },
-            { id: 'p02', name: 'Wireless Mouse', price: 550, photo: 'https://images-na.ssl-images-amazon.com/images/I/61Bd7og6RaL._SX425_.jpg' },
-            { id: 'p03', name: 'Wireless Keyboard', price: 650, photo: 'https://target.scene7.com/is/image/Target/GUEST_25cb8b97-a9ce-4dad-a0b7-1d7142461fc1?wid=488&hei=488&fmt=pjpeg' }
+            { id: '2001', name: 'Casuals', price: 650, photo: 'https://ae01.alicdn.com/kf/HTB1BNPCL3HqK1RjSZFEq6AGMXXan/2019-New-Solid-color-T-Shirt-pants-men-Mens-Black-And-White-100-cotton-T-shirts.jpg' },
+            { id: '2002', name: 'Formals', price: 750, photo: 'http://myfaashions.com/wp-content/uploads/2016/10/5-2.jpg' },
+            { id: '2003', name: 'Jeans', price: 950, photo: 'https://img.tatacliq.com/images/i3/252Wx374H/MP000000004071931_252Wx374H_20181214141410.jpeg' }
         ];
     }
 

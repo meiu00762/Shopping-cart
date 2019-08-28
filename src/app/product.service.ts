@@ -9,9 +9,9 @@ export class ProductService {
 
     constructor() {
         this.products = [
-            { id: 'p01', name: 'Gamepad', price: 950, photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbIkEkiQqEtCgU2rHJ4ArHtFQ92eLcnL7g0jYsyNXSci-_oZQu' },
-            { id: 'p02', name: 'Wireless Mouse', price: 550, photo: 'https://images-na.ssl-images-amazon.com/images/I/61Bd7og6RaL._SX425_.jpg' },
-            { id: 'p03', name: 'Wireless Keyboard', price: 650, photo: 'https://target.scene7.com/is/image/Target/GUEST_25cb8b97-a9ce-4dad-a0b7-1d7142461fc1?wid=488&hei=488&fmt=pjpeg' }
+            { id: '1001', name: 'Gamepad', price: 950, photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbIkEkiQqEtCgU2rHJ4ArHtFQ92eLcnL7g0jYsyNXSci-_oZQu' },
+            { id: '1002', name: 'Wireless Mouse', price: 550, photo: 'https://images-na.ssl-images-amazon.com/images/I/61Bd7og6RaL._SX425_.jpg' },
+            { id: '1003', name: 'Wireless Keyboard', price: 650, photo: 'https://target.scene7.com/is/image/Target/GUEST_25cb8b97-a9ce-4dad-a0b7-1d7142461fc1?wid=488&hei=488&fmt=pjpeg' }
         ];
     }
 
