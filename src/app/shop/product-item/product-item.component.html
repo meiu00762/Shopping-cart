@@ -17,7 +17,7 @@
             <img src="{{product.photo}}" width="50">
         </td>
         <td align="center">
-            <a [routerLink]="['/cart', { id:product.id }]">Buy Now</a>
+            <a [routerLink]="['/cart', { prod_id : product.id }]">Buy Now</a>
         </td>
     </tr>
 </table>

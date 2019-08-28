@@ -20,13 +20,14 @@ export class ClothesService {
     }
 
     find(id: string): Product {
+      console.log("clothes "+id+this.products[this.getSelectedIndex(id)]);
         return this.products[this.getSelectedIndex(id)];
     }
 
     private getSelectedIndex(id: string) {
         for (var i = 0; i < this.products.length; i++) {
-            if (this.products[i].id == id) {
-                return i;
+            if ((this.products[i].id) == id) {
+                return i;   
             }
         }
         return -1;

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Product } from '../../shop/entity/product.entity';
 import { ProductService } from '../../product.service';
+import { ClothesService } from '../../clothes.service';
 import { Item } from '../../shop/entity/item.entity';
 
 @Component({
@@ -18,17 +19,19 @@ export class CartComponent implements OnInit {
 
 	constructor(
 		private activatedRoute: ActivatedRoute,
-		private productService: ProductService
+		private productService: ProductService,
+    private clothesService: ClothesService
 	) { }
 
 	ngOnInit() {
 		this.activatedRoute.params.subscribe(params => {
-			var id = params['id'];
+			var id = params['prod_id'];
 			if (id) {
 				var item: Item = {
-					product: this.productService.find(id),
+					product: this.clothesService.find(id)||this.productService.find(id),
 					quantity: 1
 				};
+         console.log(item)       
 				if (localStorage.getItem('cart') == null) {
 					let cart: any = [];
 					cart.push(JSON.stringify(item));
@@ -53,8 +56,10 @@ export class CartComponent implements OnInit {
 						localStorage.setItem("cart", JSON.stringify(cart));
 					}
 				}
+        console.log("ss")
 				this.loadCart();
 			} else {
+        console.log("ss1")
 				this.loadCart();
 			}
 		});
@@ -70,6 +75,7 @@ export class CartComponent implements OnInit {
 				product: item.product,
 				quantity: item.quantity
 			});
+      console.log("ss2 load")
 			this.total += item.product.price * item.quantity;
 		}
 	}

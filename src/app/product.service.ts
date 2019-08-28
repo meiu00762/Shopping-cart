@@ -20,6 +20,7 @@ export class ProductService {
     }
 
     find(id: string): Product {
+      console.log("Elect "+this.products[this.getSelectedIndex(id)])
         return this.products[this.getSelectedIndex(id)];
     }
 
