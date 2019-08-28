@@ -13,6 +13,6 @@ export class SideBarComponent implements OnInit {
   }
   toggleSideBar() {
     this.isClosed = !this.isClosed;
-    console.log('LALALALA');
+    console.log('sidebar');
   }
 }
