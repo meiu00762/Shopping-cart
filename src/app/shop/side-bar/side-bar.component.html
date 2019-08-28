@@ -1,13 +1,15 @@
 <div class="side-bar" [ngClass]="{'closed': isClosed}">
   SIDEBAR<br><br>
-<div class="dropdown">  
+<!-- <div class="dropdown">  
     <button class="dropbtn">Product List</button>  
     <div class="dropdown-content">  
         <a routerLink="/products">Electronics</a>  
     </div>  
-</div>
-
-<a [routerLink]="['/cart']">Cart</a>
+</div> -->
+<select>
+<option><a [routerLink]="['/products']">Electronics</a></option>
+<option><a [routerLink]="['/cart']">Cart</a></option>
+</select>
 <br><br>
   <div (click)="toggleSideBar()" class="side-bar-toggle-btn">
     <i class="fa fa-arrow-right"></i>
