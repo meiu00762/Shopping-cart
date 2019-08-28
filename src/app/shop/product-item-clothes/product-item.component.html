@@ -1,0 +1,24 @@
+   <div class="shop-zone">
+   <app-side-bar class="side-bar"></app-side-bar>
+<h3>Product List</h3>
+<table border="1" align="center" style="width:800px;height:400px">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Photo</th>
+        <th>Buy</th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td align="center">{{product.id}}</td>
+        <td align="center">{{product.name}}</td>
+        <td align="center">{{product.price}}</td>
+        <td align="center">
+            <img src="{{product.photo}}" width="50">
+        </td>
+        <td align="center">
+            <a [routerLink]="['/cart', { id:product.id }]">Buy Now</a>
+        </td>
+    </tr>
+</table>
+   </div>
