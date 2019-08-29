@@ -6,11 +6,12 @@ import { CartComponent } from './cart/cart.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import {ShopRoutingModule} from './shop-routing.module';
 import {ClothesComponent } from './product-item-clothes/product-item.component';
+import {CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
     ProductComponent, CartComponent,
-     SideBarComponent,ClothesComponent
+     SideBarComponent,ClothesComponent,CheckoutComponent
   ],
   imports: [
     CommonModule, ShopRoutingModule

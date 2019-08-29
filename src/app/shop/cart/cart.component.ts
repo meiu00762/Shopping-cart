@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Routes, RouterModule, Router } from '@angular/router';
 
 import { Product } from '../../shop/entity/product.entity';
 import { ProductService } from '../../product.service';
@@ -18,10 +18,13 @@ export class CartComponent implements OnInit {
 	private total: number = 0;
 
 	constructor(
+    private router:Router,
 		private activatedRoute: ActivatedRoute,
 		private productService: ProductService,
     private clothesService: ClothesService
 	) { }
+
+  onNavigate(location: string){ this.router.navigate(['/checkout']); }
 
 	ngOnInit() {
 		this.activatedRoute.params.subscribe(params => {
@@ -66,6 +69,8 @@ export class CartComponent implements OnInit {
 				this.loadCart();
 			}
 		});
+
+    
 	}
 
 	loadCart(): void {

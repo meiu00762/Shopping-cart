@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'products', component: ProductComponent },
   { path: 'clothes', component: ClothesComponent },
 	{ path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
   {path: 'shop', loadChildren: () => ShopModule}
 ];
 
