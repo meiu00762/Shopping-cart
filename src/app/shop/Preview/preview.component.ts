@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute,Routes, RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'preview',
@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PreviewComponent implements OnInit {
-
+goHome(location: string){ this.router.navigate(['/store']); }
 
 	constructor(
+    private router:Router
 	) { }
 
 	ngOnInit() {
