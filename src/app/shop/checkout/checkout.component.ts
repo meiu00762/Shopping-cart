@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute,Routes, RouterModule, Router } from '@angular/router';
 
 
 @Component({
@@ -9,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class CheckoutComponent implements OnInit {
 
-
+onNavigate(location: string){ this.router.navigate(['/preview']); }
 	constructor(
-	) { }
+        private router:Router
+	) {
+   }
 
 	ngOnInit() {
   }
