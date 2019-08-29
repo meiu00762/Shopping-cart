@@ -21,6 +21,7 @@ private items: Item[] = [];
 	private total: number = 0;
 
 	constructor(
+    private modalService: ModalService,
     private router:Router,
 		private activatedRoute: ActivatedRoute,
 		private productService: ProductService,
