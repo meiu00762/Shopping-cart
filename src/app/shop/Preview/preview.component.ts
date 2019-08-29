@@ -23,10 +23,12 @@ export class PreviewComponent implements OnInit {
     private clothesService: ClothesService
 	) {    config.backdrop = 'static';
     config.keyboard = false; }
-goHome(location: string){ this.router.navigate(['/store']); }
-    openModal(id: string) {
-        this.modalService.open(id);
+    goHome(
+      location: string){ this.router.navigate(['/store']); }
+    openModal(content) {
+        this.modalService.open(content);
     }
+
 private items: Item[] = [];
 	private total: number = 0;
 

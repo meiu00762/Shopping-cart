@@ -8,6 +8,8 @@ import {ShopRoutingModule} from './shop-routing.module';
 import {ClothesComponent } from './product-item-clothes/product-item.component';
 import {CheckoutComponent } from './checkout/checkout.component';
 import {PreviewComponent } from './Preview/preview.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import {PreviewComponent } from './Preview/preview.component';
      SideBarComponent,ClothesComponent,CheckoutComponent,PreviewComponent
   ],
   imports: [
-    CommonModule, ShopRoutingModule
-  ]
+    CommonModule, ShopRoutingModule, NgbModule
+  ],
+    exports: [PreviewComponent],
+  bootstrap: [PreviewComponent]
 })
 export class ShopModule { }
