@@ -5,6 +5,7 @@ import { Product } from '../../shop/entity/product.entity';
 import { ProductService } from '../../product.service';
 import { ClothesService } from '../../clothes.service';
 import { Item } from '../../shop/entity/item.entity';
+import { ModalService } from '../../modal.service';
 @Component({
   selector: 'preview',
 	templateUrl: 'preview.component.html',
@@ -13,6 +14,9 @@ import { Item } from '../../shop/entity/item.entity';
 
 export class PreviewComponent implements OnInit {
 goHome(location: string){ this.router.navigate(['/store']); }
+    openModal(id: string) {
+        this.modalService.open(id);
+    }
 private items: Item[] = [];
 	private total: number = 0;
 
