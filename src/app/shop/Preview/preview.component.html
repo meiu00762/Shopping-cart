@@ -30,21 +30,13 @@
         <td align="center">{{total}}</td>
     </tr>
 </table>
-<button class="button btn" value="checkout" id="myBtn">Place Order</button>
+<button class="button btn" value="checkout" id="myBtn"  (click)="openModal('custom-modal-1')">Place Order</button>
    </div>
 
-<div id="myModal" class="modal">
+<div id="custom-modal-1">
   <div class="modal-content">
     <p>Thank you for shopping in Meiu's Online Portal...Your Order has been placed!!!</p>
   </div>
 
 </div>
 
-<script>
-  var btn = document.getElementById("myBtn");
-  var modal = document.getElementById("myModal");
-
-  btn.onclick = function() {
-  modal.style.display = "block";
-}
-</script>
