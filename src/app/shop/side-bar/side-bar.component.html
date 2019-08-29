@@ -2,7 +2,8 @@
   OPTIONS<br><br>
 <select (change)="onNavigate($event.target.value)"> <option>--Select Category--</option> <option value="products">Electronics</option> <option value="clothes">Clothings</option>  </select>
 <br><br>
-<a [routerLink]="['/cart']">Cart</a>
+<a [routerLink]="['/cart']">Cart</a><br><br>
+<a [routerLink]="['/store']">Home</a>
 <br><br>
   <div (click)="toggleSideBar()" class="side-bar-toggle-btn">
     <i class="fa fa-arrow-right"></i>
