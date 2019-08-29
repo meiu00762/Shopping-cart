@@ -1,5 +1,5 @@
 <div class="side-bar" [ngClass]="{'closed': isClosed}">
-  SIDEBAR<br><br>
+  OPTIONS<br><br>
 <select (change)="onNavigate($event.target.value)"> <option>--Select Category--</option> <option value="products">Electronics</option> <option value="clothes">Clothings</option>  </select>
 <br><br>
 <a [routerLink]="['/cart']">Cart</a>
