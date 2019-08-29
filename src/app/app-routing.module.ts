@@ -6,6 +6,7 @@ import {ClothesComponent } from './shop/product-item-clothes/product-item.compon
 import {HomeLayoutComponent} from './home/layout/layout.component';
 import {ShopModule} from './shop/shop.module';
 import {CheckoutComponent } from './shop/checkout/checkout.component';
+import {PreviewComponent } from './shop/Preview/preview.component';
 
 const routes: Routes = [
   {path: '', component: HomeLayoutComponent, pathMatch: 'full'},
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'clothes', component: ClothesComponent },
 	{ path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
-  {path: 'shop', loadChildren: () => ShopModule}
+  {path: 'shop', loadChildren: () => ShopModule},
+  { path: 'preview', component: PreviewComponent },
 ];
 
 @NgModule({
