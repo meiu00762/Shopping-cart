@@ -13,6 +13,13 @@ import { ModalService } from '../../modal.service';
 })
 
 export class PreviewComponent implements OnInit {
+  	constructor(
+    private modalService: ModalService,
+    private router:Router,
+		private activatedRoute: ActivatedRoute,
+		private productService: ProductService,
+    private clothesService: ClothesService
+	) { }
 goHome(location: string){ this.router.navigate(['/store']); }
     openModal(id: string) {
         this.modalService.open(id);
@@ -20,13 +27,6 @@ goHome(location: string){ this.router.navigate(['/store']); }
 private items: Item[] = [];
 	private total: number = 0;
 
-	constructor(
-    private modalService: ModalService,
-    private router:Router,
-		private activatedRoute: ActivatedRoute,
-		private productService: ProductService,
-    private clothesService: ClothesService
-	) { }
 
   onNavigate(location: string){ this.router.navigate(['/checkout']); }
 
