@@ -5,7 +5,8 @@ import { Product } from '../../shop/entity/product.entity';
 import { ProductService } from '../../product.service';
 import { ClothesService } from '../../clothes.service';
 import { Item } from '../../shop/entity/item.entity';
-import { ModalService } from '../../modal.service';
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'preview',
 	templateUrl: 'preview.component.html',
@@ -14,7 +15,6 @@ import { ModalService } from '../../modal.service';
 
 export class PreviewComponent implements OnInit {
   	constructor(
-    private modalService: ModalService,
     private router:Router,
 		private activatedRoute: ActivatedRoute,
 		private productService: ProductService,

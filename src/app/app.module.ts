@@ -11,7 +11,6 @@ import { ShopModule } from './shop/shop.module';
 import { ProductService } from './product.service';
 import { ClothesService } from './clothes.service';
 import {ClothesComponent } from './shop/product-item-clothes/product-item.component';
-import { ModalService } from './modal.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,7 @@ import { ModalService } from './modal.service';
     HomeModule,
     ShopModule
   ],
-  providers: [ ProductService,ClothesService,ModalService],
+  providers: [ ProductService,ClothesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
