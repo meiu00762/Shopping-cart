@@ -10,16 +10,19 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'preview',
 	templateUrl: 'preview.component.html',
-  styleUrls: ['./preview.component.scss']
+  styleUrls: ['./preview.component.scss'],
+  providers: [NgbModalConfig, NgbModal]
 })
 
 export class PreviewComponent implements OnInit {
   	constructor(
+      config: NgbModalConfig, private modalService: NgbModal,
     private router:Router,
 		private activatedRoute: ActivatedRoute,
 		private productService: ProductService,
     private clothesService: ClothesService
-	) { }
+	) {    config.backdrop = 'static';
+    config.keyboard = false; }
 goHome(location: string){ this.router.navigate(['/store']); }
     openModal(id: string) {
         this.modalService.open(id);
