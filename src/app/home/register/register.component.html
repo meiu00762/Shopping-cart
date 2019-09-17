@@ -1,32 +1,21 @@
-<!-- <body>
 <div class="bg">
-<form style="border:1px solid #ccc">
+<br><br><h1>Registration Form</h1>
+<form (submit)="onRegister($event)">
   <div class="imgcontainer">
-  <img src="https://image.freepik.com/free-vector/letter-xe-logo_10359-4.jpg" alt="Avatar" class="avatar">
-    <h1 align="center">Xena Events</h1>
-    <marquee behavior="scroll" direction="left"><p>Hot balloon riding event from Feb 28th 2017 onwards for 5 days</marquee></p>
-    <hr>
     <label for="name"><b>Name</b></label><br>
     <input type="text" placeholder="Enter name" name="name" onkeypress="return (event.charCode > 64 && 
 	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"  required><br>
 
-    <label for="age"><b>Age</b></label><br>
-    <input type="number" min ="18" placeholder="Enter age" name="age" required><br>
+    <label for="password"><b>Password</b></label><br>
+    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter password" name="password" required><br>
+
+    <label for="password"><b>Confirm Password</b></label><br>
+    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must be same as password" placeholder="Enter password" name="confirm password" required><br>
 
     <label for="mail"><b>Email-ID</b></label><br>
     <input type="text"  pattern=".+@.+com" placeholder="xxx@gmail.com" name="mail" required><br>
-    
-    <label for="city"><b>City</b></label><br>
-    <input list="city" name="city" placeholder="Select city"><br>
-    <datalist id="city">
-    <option value="Rajkot">
-    <option value="Bangalore">
-    <option value="Vizag">
-    </datalist>
 
       <button type="submit" class="signupbtn">Sign Up</button>
-</div>
   </div>
 </form>
-
-</body> -->
+</div>
