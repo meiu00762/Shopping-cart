@@ -7,11 +7,9 @@ import {HomeLayoutComponent} from './home/layout/layout.component';
 import {ShopModule} from './shop/shop.module';
 import {CheckoutComponent } from './shop/checkout/checkout.component';
 import {PreviewComponent } from './shop/Preview/preview.component';
-import { RegisterComponent } from './home/register/register.component';
 
 const routes: Routes = [
   {path: '', component: HomeLayoutComponent, pathMatch: 'full'},
-  { path: 'register', component: RegisterComponent },
   { path: 'products', component: ProductComponent },
   { path: 'clothes', component: ClothesComponent },
 	{ path: 'cart', component: CartComponent },
