@@ -9,12 +9,13 @@ import {ClothesComponent } from './product-item-clothes/product-item.component';
 import {CheckoutComponent } from './checkout/checkout.component';
 import {PreviewComponent } from './Preview/preview.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     ProductComponent, CartComponent,
-     SideBarComponent,ClothesComponent,CheckoutComponent,PreviewComponent
+     SideBarComponent,ClothesComponent,CheckoutComponent,PreviewComponent,HomeComponent
   ],
   imports: [
     CommonModule, ShopRoutingModule, NgbModule

@@ -13,6 +13,6 @@ export class LoginComponent implements OnInit {
   }
   onLogin(event) {
     event.preventDefault();
-    this.router.navigate(['/shop']);
+    this.router.navigate(['/home']);
   }
 }

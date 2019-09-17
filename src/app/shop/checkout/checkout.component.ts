@@ -11,7 +11,7 @@ import { ActivatedRoute,Routes, RouterModule, Router } from '@angular/router';
 export class CheckoutComponent implements OnInit {
 
 onNavigate(location: string){ this.router.navigate(['/preview']); }
-goHome(location: string){ this.router.navigate(['/store']); }
+goHome(location: string){ this.router.navigate(['/home']); }
 	constructor(
         private router:Router
 	) {

@@ -24,7 +24,7 @@ export class PreviewComponent implements OnInit {
 	) {    config.backdrop = 'static';
     config.keyboard = false; }
     goHome(
-      location: string){ this.router.navigate(['/store']); }
+      location: string){ this.router.navigate(['/home']); }
     openModal(content) {
         this.modalService.open(content);
     }

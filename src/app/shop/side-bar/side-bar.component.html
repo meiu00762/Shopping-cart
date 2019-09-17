@@ -1,9 +1,10 @@
 <div class="side-bar" [ngClass]="{'closed': isClosed}">
   OPTIONS<br><br>
-<select (change)="onNavigate($event.target.value)"> <option>--Select Category--</option> <option value="products">Electronics</option> <option value="clothes">Clothings</option>  </select>
+<select (change)="onNavigate($event.target.value)"> <option hidden>--Select Category--</option> <option value="products">Electronics</option> <option value="clothes">Clothings</option>  </select>
 <br><br>
-<a [routerLink]="['/cart']">Cart</a><br><br>
-<a [routerLink]="['/store']">Home</a>
+<button class="button btn" [routerLink]="['/cart']">Cart</button><br><br>
+<button class="button btn" [routerLink]="['/home']">Home</button><br><br>
+<button class="button btn" [routerLink]="['']">Logout</button>
 <br><br>
   <div (mouseover)="toggleSideBar()" class="side-bar-toggle-btn">
     <i class="fa fa-arrow-right"></i>
