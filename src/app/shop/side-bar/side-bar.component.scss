@@ -9,6 +9,10 @@
   &.closed {
     margin-left: -150px;
   }
+
+    &.closed:hover {
+    margin-left: -20px;
+  } 
   &-toggle-btn {
     display: flex;
     align-items: center;
@@ -75,9 +79,11 @@ background-color: #f1f1f1;
   background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
+  margin-left:-50px
 }
 
 .btn:hover {
   background-color: #4CAF50;
   color: white;
+  margin-left:0px
 }
