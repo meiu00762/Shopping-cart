@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import {ShopRoutingModule} from '.././shop/shop-routing.module';
 
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
   imports: [
-    CommonModule
+    CommonModule, ShopRoutingModule
   ],
   exports: [LayoutComponent]
 })
